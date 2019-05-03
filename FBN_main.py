@@ -9,7 +9,7 @@ def main():
     terms, layer_num, net_shape = Init.init(file_path)  # 从文件中读取语言描述分级的个数，FBN网络层数，网络结构
     normalised_weights = Init.read_weight(file_path, net_shape)     # 从文件中读取节点权重
     input_prob = Init.read_input(file_path, net_shape)
-    # print(net_shape)
+    print(normalised_weights)
     # print(len(input_prob[3]))
     for i in range(layer_num):
         layer_temp = []
@@ -32,22 +32,32 @@ def main():
             for j in range(i):
                 node[-1][k][j].prob = input_prob[k][j]
             k += 1
-    print(input_prob[0][0])
-    # print(node[-1][4][2].prob)
-    # print(node[-1][0][0].prob)
-    # print(len(input_prob[0][0]))
-    # print(net_shape)
-    # print(normalised_weights)
-    # print(np.shape(net_shape))
-    cpt1 = Lib.cal_cpt(normalised_weights, terms)
-    input_data = Init.read_input(file_path, net_shape)
-    joint1 = Lib.cal_joint_prob(node[-1][1], terms)
-    ans = [1, 1, 1, 1, 1]
-    for i in range(len(ans)):
-        ans[i] = ans[i] * np.sum(cpt1[i] * joint1)
-    print(ans)
-    a = Lib.Node(input_data[0][0])
-    b = Lib.CalNode()
+    print(node[0][0])
+    print(len(node[0][0]))
+    for i in range(len(node[0][0])):
+        print(normalised_weights[1][i])
+        node[0][0][i].cpt = Lib.cal_cpt(normalised_weights[1][i], terms)    # 计算节点的CPT
+        node[0][0][i].joint = Lib.cal_joint_prob(node[-1][i], terms)    # 计算节点的父节点的联合概率分布
+        node[0][0][i].prob = np.ones(terms)
+        for k in range(terms):
+            node[0][0][i].prob[k] = node[0][0][i].prob[k] * np.sum(node[0][0][i].cpt[k] * node[0][0][i].joint)
+        # print(node[0][0][i].prob)
+    goal_node = Lib.CalNode()
+    goal_node.cpt = Lib.cal_cpt(normalised_weights[0][0], terms)
+    goal_node.joint = Lib.cal_joint_prob(node[0][0], terms)
+    goal_node.prob = np.ones(terms)
+    for i in range(terms):
+        goal_node.prob[i] = goal_node.prob[i] * np.sum(goal_node.cpt[i] * goal_node.joint)
+    print("goal: ", goal_node.prob)
+    # cpt1 = Lib.cal_cpt(1, terms)
+    # input_data = Init.read_input(file_path, net_shape)
+    # joint1 = Lib.cal_joint_prob(node[-1][1], terms)
+    # ans = [1, 1, 1, 1, 1]
+    # for i in range(len(ans)):
+        # ans[i] = ans[i] * np.sum(cpt1[i] * joint1)
+    # print(ans)
+    # a = Lib.Node(input_data[0][0])
+    # b = Lib.CalNode()
     # print(a.prob[1])
     # print(a.sum)
     # print(b.prob)

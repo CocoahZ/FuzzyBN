@@ -12,13 +12,13 @@ class Node:
 
 
 class CalNode(Node):
-    def __init__(self, p=[], cpt=[]):
+    def __init__(self, p=[], cpt=[], joint=[]):
         super().__init__(p)
         self.cpt = cpt
+        self.joint = joint
 
 
 def cal_cpt(weight, terms):
-    weight = weight[1]
     # print(weight)
     # print(len(weight))
     # print(terms)

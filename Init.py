@@ -34,12 +34,14 @@ def read_weight(file_path, net_shape):
         for i in reader:
             context.append(i)
     for i in range(layer_num):
+        layer_temp = []
         for k in net_shape[i]:
             temp = []
             for l in range(k):
                 temp.append(float(context[j][1]))
                 j += 1
-            ans.append(temp)
+            layer_temp.append(temp)
+        ans.append(layer_temp)
     return ans
 
 
