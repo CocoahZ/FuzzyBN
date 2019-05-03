@@ -62,7 +62,7 @@ def main():
     # print(a.sum)
     # print(b.prob)
     # print(b.sum)
-
+    Lib.utility_value(goal_node, terms)
 
 if __name__ == '__main__':
     main()

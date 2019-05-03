@@ -77,3 +77,12 @@ def create_mask(mask_shape, terms):
     # np.set_printoptions(threshold=1e+6)
     # print(mask)
     return mask
+
+
+def utility_value(output_node, terms):
+    v_n = [i + 1 for i in range(terms)]
+    u_v = []
+    for i in range(terms):
+        u_v.append((v_n[i] - v_n[0]) / (v_n[-1] - v_n[0]))
+    D_DR = sum(output_node.prob * u_v)
+    print(D_DR)
