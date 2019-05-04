@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21235011-0cc5-4601-a8b4-12d35e173975" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FBN_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FBN_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lib.py" afterDir="false" />
     </list>
@@ -13,68 +12,88 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FBN_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lib.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Init.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/InputData.CSV">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Data/Normalised_Weights.CSV">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://F:/RL/homework-master/hw1/run_expert.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/FBN_main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="509">
+                  <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Lib.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Init.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1">
+                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/InputData.CSV">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="2" selection-start-column="2" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Data/Normalised_Weights.CSV">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://F:/RL/homework-master/hw1/run_expert.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1037">
+                  <caret line="67" selection-start-line="67" selection-end-line="67" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Lib.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="611">
+                  <caret line="127" column="56" lean-forward="true" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,6 +101,11 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>copy</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -97,8 +121,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-12" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="157" />
+    <option name="y" value="-39" />
     <option name="width" value="1941" />
     <option name="height" value="2112" />
   </component>
@@ -233,14 +258,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33152175" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3998447" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3296875" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3296875" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32890624" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32841614" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -289,8 +314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FBN_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        <state relative-caret-position="509">
+          <caret line="57" column="70" selection-start-line="57" selection-start-column="70" selection-end-line="57" selection-end-column="70" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -299,8 +324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
+        <state relative-caret-position="611">
+          <caret line="127" column="56" lean-forward="true" selection-start-line="127" selection-start-column="56" selection-end-line="127" selection-end-column="56" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
