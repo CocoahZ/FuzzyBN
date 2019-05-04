@@ -2,6 +2,7 @@ import numpy as np
 import copy
 import Init
 
+
 class Node:
     def __init__(self, p=[]):
         self.prob = p
